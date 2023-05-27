@@ -1,8 +1,8 @@
 
 
 // need to be hidden and not exposed in a client code !
-//const API_KEY = "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";
-const apiKey = process.env.API_KEY;
+const API_KEY = "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";
+
 //process.env.API_KEY
 //const apikey =  process.env.API_KEY;
 var myTimeout;
