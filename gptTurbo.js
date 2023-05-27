@@ -1,7 +1,8 @@
 
 
 // need to be hidden and not exposed in a client code !
-const API_KEY = "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";
+//const API_KEY = "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";
+const apiKey = process.env.API_KEY;
 //process.env.API_KEY
 //const apikey =  process.env.API_KEY;
 var myTimeout;
@@ -17,7 +18,7 @@ async function getGPTmessage(input) {
   const options = {
     method: 'POST',
     headers: {
-      'Authorization': `Bearer ${API_KEY}`,
+      'Authorization': `Bearer ${apikey}`,
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({
